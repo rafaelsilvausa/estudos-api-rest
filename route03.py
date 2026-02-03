@@ -20,9 +20,10 @@ def main ():
             for resultado in data_jason["results"]:
                 nome = resultado["name"]
                 especie = resultado["species"]
-
+                print("-"*50)
                 print(nome,especie)
                 print(page)
+
 
                 if page < page_total:
                     page+=1
@@ -31,5 +32,5 @@ def main ():
                     sys.exit()
                 
 
-
-main()
+if __name__ == "__main__":
+    main()
